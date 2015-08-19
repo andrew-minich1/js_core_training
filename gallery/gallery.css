@@ -1,0 +1,57 @@
+body{
+	width: 100%;
+	margin: 5% auto;
+}
+
+div{
+	margin:0;
+	padding: 0;
+}
+
+#widget{
+	width:100%;
+	margin: 0 auto;
+	white-space: nowrap;
+	text-align: center;
+}
+
+#main_container{
+	animation: show 2s;
+	background-color: rgb(232, 225, 225);
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+	overflow-x: hidden;
+    overflow-y: auto;
+    padding-top:1%;
+    padding-bottom: 1%;
+	border-top: 5px solid black;
+	border-bottom: 5px solid black;
+}
+	@keyframes show{
+		to{
+			opacity: 1;
+		}
+		from{
+			opacity: 0;
+		}
+	}
+
+.item_container{
+	border: 5px solid black;
+	display: inline-block;
+	margin: 10px;
+	border-radius: 30px;
+	overflow:hidden;
+	box-shadow: -1px -2px 64px -10px #000000 inset;
+}
+
+.active{
+	border-color:  red;
+	box-shadow: 1px 3px 28px 2px #ff0000,
+	-1px -2px 64px -10px #000000 inset;
+}
+
+.title_container{
+	font-size: 2em;
+}
